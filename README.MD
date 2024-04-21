@@ -6,6 +6,7 @@ This application is designed to make an detailed analysis in time series. Starti
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
+In the file `time_series_web_version` is an HTML version of the project.
 ### Prerequisites
 
 Before setting up the project, you need to have R Studion installed on your computer.
@@ -16,10 +17,13 @@ Download it from: [R Studio](https://www.r-project.org/).
 
 1. Open a script in **R Studio.**
     
-    Run the following commant. It will run this github repository on your local machine.
-   ```bash
-   library(shiny)
-   runGitHub(repo = "exchange_rate", username = "gerald-cakoni", ref = "main")
+    - Run the following commant. It will run this github repository on your local machine.
+
+            library(shiny)
+            runGitHub(repo = "exchange_rate_prediction", username = "gerald-cakoni", ref = "main")
+            
+    - Or, alternativeely: Run the file `run_shiny.R`
+
 
 
 

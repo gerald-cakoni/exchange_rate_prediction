@@ -1,2 +1,2 @@
 library(shiny)
-runGitHub(repo = "exchange_rate", username = "gerald-cakoni", ref = "main")
+shiny::runGitHub(repo = "exchange_rate_prediction", username = "gerald-cakoni", ref = "main")
