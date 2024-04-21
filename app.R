@@ -24,8 +24,10 @@ package.check <- lapply(
   }
 )
 
+urlfile="https://raw.githubusercontent.com/gerald-cakoni/exchange_rate_prediction/main/KembimiValutor.csv"
 
-te_dhena <- read_csv("C:/Users/geral/Desktop/shiny/KembimiValutor.csv")
+te_dhena<-read_csv(url(urlfile))
+View(te_dhena)# te_dhena <- read_csv("C:/Users/geral/Desktop/shiny/KembimiValutor.csv")
 #View(te_dhena)
 kembimi_valutor<-ts(te_dhena$kembimi_valutor,start =c(2016,1),frequency = 12)
 norma_huave_euro<-ts(te_dhena$norma_huave_euro,start =c(2016,1),frequency = 12)
